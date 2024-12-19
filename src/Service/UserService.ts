@@ -25,6 +25,7 @@ export class UserService extends Service {
         
     }
 
+   
     /**
      * 新增學生
      * @param info 學生資訊
@@ -57,6 +58,7 @@ export class UserService extends Service {
                     }
                 }
             } catch(error){
+                console.log(error)
                 resp.message = "server error";
                 resp.code = 500;
             }

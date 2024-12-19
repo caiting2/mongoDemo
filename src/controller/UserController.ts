@@ -35,6 +35,8 @@ export class UserController extends Contorller {
 
     }
 
+    
+
     public async insertOne(Request: Request, Response: Response) {
         const resp = await this.service.insertOne(Request.body)
         Response.status(resp.code).send(resp)
